@@ -1,0 +1,136 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Playwrite+NZ:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Form Container */
+form {
+  width: 40vw;
+  /* max-width: 300px; */
+  margin: auto;
+  background: #f9f9f9;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+  font-family: "Winky Rough", sans-serif;
+  font-optical-sizing: auto;
+  
+}
+body {
+  overflow: hidden;
+}
+
+form:hover {
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+/* Input Fields */
+input {
+  width: 100%;
+  padding: 8px 10px;
+  margin: 8px 0 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+     border-color: #4a90e2;
+    box-shadow: 1px -1px 12px 5px rgba(74, 144, 226, 0.4);
+    outline: none;
+}
+
+/* Button */
+button {
+  background-color: #4a90e2;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #357ABD;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Table Styling */
+.list {
+  margin: 30px auto;
+  width: 90%;
+  max-width: 800px;
+}
+
+table.list-stu {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 100px;
+  
+}
+
+table.list-stu thead {
+  background-color: #4a90e2;
+  color: black;
+  text-align: left;
+}
+
+table.list-stu th,
+table.list-stu td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+table.list-stu tbody tr:hover {
+  background-color: #f1f5ff;
+  transition: background-color 0.2s ease-in-out;
+}
+
+table.list-stu button {
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  margin-right: 5px;
+}
+.reg-form
+ {
+   width:70vw;
+    margin: auto;
+   margin-top:100px;
+    padding: 1rem;
+    border: 1px solid #ccc;
+
+ }
+
+@media (max-width: 768px) {
+ form
+ {
+   width: 75vw;
+  /* max-width: 300px; */
+  margin: auto;
+  background: #f9f9f9;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+  font-family: "Winky Rough", sans-serif;
+  font-optical-sizing: auto;
+ }
+ .reg-form
+ {
+   /* width:none; */
+    margin: auto;
+   margin-top:100px;
+    padding: 0;
+    border: none;
+
+ }
+}

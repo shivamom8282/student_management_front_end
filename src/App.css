@@ -1,0 +1,99 @@
+@import "tailwindcss";
+.form1{
+    margin-top: 100px;
+ background-color: rgb(188 200 175);
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
+ height: 400px;
+ border-radius: 20px;
+ 
+}
+.form1
+{
+  /* background-color: #fff; */
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 400px;
+}
+.form2
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.input
+{
+    border-style: none;
+    border-radius: 10px;
+}
+button{
+  
+  width: 100px;
+  background-color: #2575fc;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover
+{
+   background-color: rgb(122, 172, 167);
+}
+.list
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
+    justify-content: center;
+    align-items: center;
+}
+.list-stu {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.list-stu th,
+.list-stu td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.list-stu th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.form1{
+   border: 2px solid black;
+    width:35vw;
+   height: 333px;
+   margin-top: 157px;
+   background-color:#D4C9BE;
+}
+
+@media (max-width: 777px) {
+  body {
+    background-color: lightblue;
+    
+  }
+  .form1
+  {
+     border: 2px solid black;
+    width:91vw;
+   height: 333px;
+   margin-top: 157px;
+   background-color:#D4C9BE;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+}
