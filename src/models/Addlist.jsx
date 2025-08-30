@@ -76,8 +76,8 @@ function Addlist() {
   };
 
   return (
-    <div style={{height:"100vh",display:" flex",justifyContent: "center", alignItems: "center",flexDirection: "column", gap:"20px"}}>
-      <h2 style={{display:"flex",justifyContent:"center",alignItems:"center",marginTop:'80px',color:'white'}}>
+    <div style={{height:"100vh",justifyContent: "center", alignItems: "center",flexDirection: "column", gap:"20px"}}>
+      <h2 style={{display:"flex",justifyContent:"center",alignItems:"center",marginTop:'100px',color:'white'}}>
         {editingStudent ? 'Update Student' : 'Add Student'}
       </h2>
 

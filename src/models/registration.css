@@ -1,6 +1,5 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Playwrite+NZ:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
-
 /* Form Container */
 form {
   width: 40vw;
@@ -63,7 +62,8 @@ button:active {
 .list {
   margin: 30px auto;
   width: 90%;
-  max-width: 800px;
+  max-width: 91vw;
+  display: flex;
 }
 
 table.list-stu {
@@ -74,7 +74,7 @@ table.list-stu {
   transition: all 0.3s ease;
   border-radius: 10px;
   overflow: hidden;
-  margin-top: 100px;
+  /* margin-top: 100px; */
   
 }
 
@@ -133,4 +133,19 @@ table.list-stu button {
     border: none;
 
  }
+ 
+table.list-stu th,
+table.list-stu td {
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
+button {
+  background-color: #4a90e2;
+  color: white;
+  padding: 1px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
 }

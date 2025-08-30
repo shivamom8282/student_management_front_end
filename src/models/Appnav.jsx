@@ -20,8 +20,8 @@ function Appnav() {
     left: "0",
     backgroundColor:"#030303"
     }}>
-      <Container>
-         <span style={{ color: "white" }}>
+      <Container style={{flexDirection: "row"}}>
+         <span style={{ color: "white"}}>
       <img src={s1} alt="Description" style={{height:"70px", display:"flex",alignItems:"center",justifyContent:"center"}} />
     </span>
         <Navbar.Brand href="/">MyApp</Navbar.Brand>
@@ -35,7 +35,7 @@ function Appnav() {
             <Link to="/registration" className='underline-link'  style={{color:"white", marginTop: "10px", display: "block",textDecoration:"none" }}>Registration</Link>
             <Link to="/stulist" className='underline-link' style={{color:"white", marginTop: "10px", display: "block",textDecoration:"none" }}>List</Link>
             <Link to="/add" className='underline-link' style={{color:"white", marginTop: "10px", display: "block",textDecoration:"none" }}>Addlist</Link>
-            <button onClick={handlelogin}>logout</button>
+            {JSON.parse(localStorage.getItem('loginadmin'))!=="" && <button onClick={handlelogin}>logout</button>}
             <label htmlFor="" style={{color:"white", backgroundColor:"grey",borderRadius:"4px"}}>{JSON.parse(localStorage.getItem('loginadmin'))}</label>
           </Nav>
         </Navbar.Collapse>

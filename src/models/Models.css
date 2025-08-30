@@ -15,6 +15,7 @@ link
   font-size: 20px;
 }
 
+
 .underline-link::after {
   content: '';
   position: absolute;
@@ -28,4 +29,17 @@ link
 
 .underline-link:hover::after {
   width: 100%;
+}
+
+@media (max-width: 500px)
+{
+  .one
+  {
+        width: 48px;
+    font-size: 11px;
+  }
+  .list-stu
+  {
+    font-size: 10px;
+  }
 }
