@@ -6,12 +6,15 @@ import "./index.css";
 import App from "./App.jsx";
 // import StudentManagement from "./StudentManagement.jsx";
 import Form1 from "./Form1.jsx";
-import Registration from "./models/registration.jsx";
+// import Registration from "./models/registration.jsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Appnav from "./models/Appnav.jsx";
 // import Studentlist from "./models/Studentlist.jsx";
 import AuthContextProvider, { AuthContext } from "./Authprovider.jsx";
 import Studentlist from "./models/Studentlist.jsx";
+import Registration from "./models/Registration.jsx";
+// import Registration from "./models/Registration.jsx";
+
 
 // import {Stulist} from './StudentManagement.jsx'
 createRoot(document.getElementById("root")).render(
